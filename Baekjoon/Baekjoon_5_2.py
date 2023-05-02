@@ -107,3 +107,18 @@ elif (60<=num)&(num<70):
     print('D')
 else:
     print('F')
+
+### 2753번
+# https://www.acmicpc.net/problem/2753
+
+year = int(input())
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print('1')
+        else:
+            print('0')
+    else:
+        print('1')
+else:
+    print('0')
